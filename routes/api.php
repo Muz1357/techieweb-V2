@@ -9,6 +9,7 @@ use App\Models\OrderItem;
 use App\Models\Cart;
 use App\Models\CartItem;
 use App\Http\Controllers\Api\ProfileController;
+use App\Http\Controllers\Api\AuthController;
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/profile', function (Request $request) {
@@ -164,6 +165,7 @@ Route::middleware('auth:sanctum')->group(function () {
     
 });
 
+Route::post('/register', [AuthController::class, 'register']);
 
 Route::post('/token', function (Request $request) {
     $request->validate([
