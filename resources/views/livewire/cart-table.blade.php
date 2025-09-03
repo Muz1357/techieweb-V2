@@ -37,7 +37,7 @@
                   wire:model.defer="quantities.{{ $item->id }}" 
                   class="w-16 border-gray-300 rounded-lg text-center">
             <button wire:click="updateQuantity({{ $item->id }})" 
-                    class="ml-4 bg-lblue hover:bg-indigo-700 text-white px-3 py-1 rounded-lg">
+                    class="ml-4 bg-lblue hover:bg-lblue text-white px-3 py-1 rounded-lg">
               Update
             </button>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="text-right">
         <a href="{{ route('checkout.show') }}" 
-           class="bg-lblue hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded">
+           class="bg-lblue hover:bg-lblue text-white font-bold py-2 px-4 rounded">
           Proceed to Checkout
         </a>
       </div>

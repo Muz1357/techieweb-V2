@@ -5,9 +5,11 @@
       <div class="md:col-span-2 bg-white p-6 rounded-xl shadow">
         <h3 class="font-semibold mb-4">Shipping Address</h3>
         <form method="POST" action="{{ route('checkout.process') }}" class="space-y-4">
-          @csrf
-          <textarea name="address" rows="6" class="w-full border-gray-300 rounded-lg" required>{{ old('address', auth()->user()->address) }}</textarea>
-          <button class="px-4 py-2 bg-lblue text-white rounded-lg">Pay Now (Simulation)</button>
+            @csrf
+            <textarea name="address" rows="6" class="w-full border-gray-300 rounded-lg" required>
+                {{ old('address', auth()->user()->address ?? '') }}
+            </textarea>
+            <button class="px-4 py-2 bg-lblue text-white rounded-lg">Pay Now (Simulation)</button>
         </form>
       </div>
       <div class="bg-white p-6 rounded-xl shadow">
