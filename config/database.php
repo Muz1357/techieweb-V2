@@ -41,11 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'sql.freedb.tech',
+            'host' => 'pro.freedb.tech',
             'port' => '3306',
-            'database' => 'freedb_techie',
-            'username' => 'freedb_mohomad',
-            'password' => 'bg@W6B3q?8yE3Fg',
+            'database' => 'Techie',
+            'username' => 'daniel',
+            'password' => '9?#!JUHY$j6tsqr',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_0900_ai_ci',
             'prefix' => '',
